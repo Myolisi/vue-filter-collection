@@ -17,7 +17,7 @@ or
 yarn add vue-filters-collection
 ```
 
-##Examples
+## Examples
 
 ```
 <template>
@@ -42,7 +42,7 @@ export default {
 </script>
 ```
 
-##Note!
+## Note!
 
 - The package is still in its beta version i.e there's a lot of functionality to be added
 - Need to add more html entities See [ASCII Characters (Printable)](https://www.freeformatter.com/).
