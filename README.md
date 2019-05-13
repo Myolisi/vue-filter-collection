@@ -19,7 +19,7 @@ yarn add vue-filters-collection
 
 ## Examples
 
-```
+```javascript
 <template>
   <div id="app">
     <div>{{username | capitalize}}</div>
