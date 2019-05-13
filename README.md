@@ -22,9 +22,9 @@ yarn add vue-filters-collection
 ```javascript
 <template>
   <div id="app">
-    <div>{{username | capitalize}}</div>
-    <div>{{entities | htmlEntities}}</div>
-    <div>{{bestSaying | camelcase}}</div>
+    <div>{{username | capitalize}}</div> //James May
+    <div>{{entities | htmlEntities}}</div> //Hello "james" may
+    <div>{{bestSaying | camelcase}}</div> //Asta Lavista Baby
   </div>
 </template>
 
