@@ -2,9 +2,9 @@
 
 vue-filters-collection is a collection of filters that help transform strings and dates. the following is a list of all the aavailable filters
 
-```camelcasToReadable``` - transforms a camelcase string to a readable string e.g JamesMay will be James May
-```capitalize``` - transforms the first letter of in a string to a capital letter e.g james may will be James May
-```htmlEntities``` - converts all html entites to readable characters eg &quot; will be " : a quote
+* ```camelcasToReadable``` - transforms a camelcase string to a readable string e.g JamesMay will be James May
+* ```capitalize``` - transforms the first letter of in a string to a capital letter e.g james may will be James May
+* ```htmlEntities``` - converts all html entites to readable characters eg &quot; will be " : a quote
 
 ### To install
 
