@@ -9,13 +9,11 @@
         "url": "git+https://github.com/Myolisi/vue-filter-collection.git"
     },
     "keywords": [
-        "camelcase",
-        "to",
-        "string",
+        "camelcase to string",
         "vuejs",
         "nuxtjs",
-        "string",
-        "manipulation"
+        "string manipulation",
+        "capitslize"
     ],
     "scripts": {
         "serve": "vue-cli-service serve",
