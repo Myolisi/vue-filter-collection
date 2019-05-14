@@ -2,7 +2,21 @@
     "name": "vue-filters-collection",
     "version": "0.2.0",
     "private": false,
+    "description": "A collection of handy vuejs filters.",
     "author": "myolisi <myolisi@ngubentombi.co.za>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Myolisi/vue-filter-collection.git"
+    },
+    "keywords": [
+        "camelcase",
+        "to",
+        "string",
+        "vuejs",
+        "nuxtjs",
+        "string",
+        "manipulation"
+    ],
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
