@@ -1,15 +1,12 @@
 # vue-filters-collection
 
-##Description
 vue-filters-collection is a collection of filters that help transform strings and dates. the following is a list of all the aavailable filters
 
-```
-camelcasToReadable - transforms a camelcase string to a readable string e.g JamesMay will be James May
-capitalize - transforms the first letter of in a string to a capital letter e.g james may will be James May
-htmlEntities - converts all html entites to readable characters eg &quot; will be " : a quote
-```
+* ```camelcasToReadable``` - transforms a camelcase string to a readable string e.g JamesMay will be James May
+* ```capitalize``` - transforms the first letter of in a string to a capital letter e.g james may will be James May
+* ```htmlEntities``` - converts all html entites to readable characters eg &quot; will be " : a quote
 
-## To install
+### To install
 
 ```
 npm install vue-filters-collection
@@ -17,7 +14,7 @@ or
 yarn add vue-filters-collection
 ```
 
-## Examples
+### Examples
 
 ```javascript
 <template>
@@ -42,7 +39,7 @@ export default {
 </script>
 ```
 
-## Note!
+### Note!
 
 - The package is still in its beta version i.e there's a lot of functionality to be added
 - Need to add more html entities See [ASCII Characters (Printable)](https://www.freeformatter.com/).
