@@ -1,6 +1,6 @@
-import camelcase from "./filters/camelcase";
-import capitalize from "./filters/capitalize";
-import htmlEntities from "./filters/htmlEntities";
+import camelcase from "./src/filters/camelcase";
+import capitalize from "./src/filters/capitalize";
+import htmlEntities from "./src/filters/htmlEntities";
 export default {
   install(Vue) {
     Vue.filter("camelcase", camelcase);

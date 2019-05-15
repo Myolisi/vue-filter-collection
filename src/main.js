@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import filters from "./vueFiltersCollection";
+import filters from "../index";
 Vue.use(filters);
 Vue.config.productionTip = false;
 
