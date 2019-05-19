@@ -8,6 +8,14 @@
         "type": "git",
         "url": "git+https://github.com/Myolisi/vue-filter-collection.git"
     },
+    "main": "dist/app.bab0a8d9.js",
+    "module": "dist/app.bab0a8d9.js",
+    "browser": "dist/app.bab0a8d9.js",
+    "unpkg": "dist/app.bab0a8d9.js",
+    "files": [
+        "dist",
+        "src"
+    ],
     "keywords": [
         "camelcase to string",
         "vuejs",
