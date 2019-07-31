@@ -1,6 +1,6 @@
 {
     "name": "vue-filters-collection",
-    "version": "0.2.8",
+    "version": "0.2.9",
     "private": false,
     "description": "A collection of handy vuejs filters.",
     "author": "myolisi <myolisi@ngubentombi.co.za>",
@@ -8,29 +8,28 @@
         "type": "git",
         "url": "git+https://github.com/Myolisi/vue-filter-collection.git"
     },
-    "main": "dist/app.bab0a8d9.js",
-    "module": "dist/app.bab0a8d9.js",
-    "browser": "dist/app.bab0a8d9.js",
-    "unpkg": "dist/app.bab0a8d9.js",
+    "main": "./dist/index.js",
     "files": [
-        "dist",
-        "src"
+        "dist"
     ],
     "keywords": [
         "camelcase to string",
         "vuejs",
+        "vue-filters",
+        "vuejs-filters",
         "nuxtjs",
         "string manipulation",
-        "capitslize"
+        "capitalize"
     ],
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
+        "build": "webpack",
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
         "core-js": "^2.6.5",
-        "vue": "^2.6.10"
+        "vue": "^2.6.10",
+        "webpack": "^4.38.0"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "^3.7.0",
@@ -40,7 +39,8 @@
         "babel-eslint": "^10.0.1",
         "eslint": "^5.16.0",
         "eslint-plugin-vue": "^5.0.0",
-        "vue-template-compiler": "^2.5.21"
+        "vue-template-compiler": "^2.5.21",
+        "webpack-cli": "^3.3.6"
     },
     "eslintConfig": {
         "root": true,

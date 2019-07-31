@@ -1,5 +1,14 @@
 export const capitalize = Vue => {
   Vue.filter("capitalize", value => {
+    if (!value) return;
+    return capitalize(value);
+  });
+
+  Vue.prototype.$capitalize = value => {
+    return capitalize(value);
+  };
+
+  function capitalize(value) {
     if (value && isNaN(value)) {
       value = value.split(" ");
 
@@ -10,5 +19,5 @@ export const capitalize = Vue => {
       return value.join(" ");
     }
     return value;
-  });
+  }
 };
