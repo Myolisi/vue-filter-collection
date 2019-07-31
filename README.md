@@ -1,10 +1,15 @@
-# vue-filters-collection
+# vue-filters-collection :boom:
 
-vue-filters-collection is a collection of filters that help transform strings and dates. the following is a list of all the aavailable filters
+vue-filters-collection is a collection of filters that help transform/convert strings in a more convenient way. the following is a list of all the available filters (_For now_)
 
-* ```camelcasToReadable``` - transforms a camelcase string to a readable string e.g JamesMay will be James May
-* ```capitalize``` - transforms the first letter of in a string to a capital letter e.g james may will be James May
-* ```htmlEntities``` - converts all html entites to readable characters eg &quot; will be " : a quote
+- `camelcasToReadable` - Will converts a camelcase string to a readable string JamesMay will be James May
+
+- `capitalize` - takes an argument, _first_ capitalizies the first character/s in a string. eg james may will be James May
+  if no argument is passed the whole string will be converted to uppercase e.g james may will be JAMES MAY
+
+- `decapitalize` - converts the whole string to small letters.
+
+- `htmlEntities` - substitutes &quot; htmlentity with a double quote.
 
 ### To install
 
@@ -14,14 +19,26 @@ or
 yarn add vue-filters-collection
 ```
 
+### Load the plugin to your project
+
+```javascript
+import Vue from 'vue';
+import vueFiltersCollection from 'vue-filters-collection';
+
+Vue.use(vueFiltersCollection);
+```
+
 ### Examples
 
 ```javascript
 <template>
   <div id="app">
-    <div>{{username | capitalize}}</div> //James May
-    <div>{{entities | htmlEntities}}</div> //Hello "james" may
-    <div>{{bestSaying | camelcase}}</div> //Asta Lavista Baby
+    <div>{{pCapitalize | capitalize}}</div> //JAMES MAY
+    <div>{{pCapitalize | capitalize('first')}}</div> //Jame May
+
+    <div>{{pDecapitalize | decapitalize}}</div> //james may
+    <div>{{pEntities | htmlEntities}}</div> //Hello "james" may
+    <div>{{pCamelcase | camelcase}}</div> //Asta Lavista Baby
   </div>
 </template>
 
@@ -30,18 +47,29 @@ export default {
   name: "app",
   data() {
     return {
-      username: "james may",
-      entities: "Hello &quot;james&quot; may",
-      bestSaying: "astaLavistaBaby"
+      pCapitalize: "james may",
+      pDecapitalize: "JAMES MAY",
+      pEntities: "Hello &quot;james&quot; may",
+      pCamelcase: "astaLavistaBaby"
     };
   }
 };
 </script>
 ```
 
+### How to use these vuejs filters in your script (code)
+
+```javascript
+
+doTheBoogie(){
+     console.log(this.$options.filters.capitalize(this.pCapitalize)); //JAMES MAY
+     // ......
+}
+
+```
+
 ### Note!
 
-- The package is still in its beta version i.e there's a lot of functionality to be added
-- Need to add more html entities See [ASCII Characters (Printable)](https://www.freeformatter.com/).
+- Need to add more html entities See [ASCII Characters (Printable)](https://dev.w3.org/html5/html-author/charref).
 - Need to add more filters
-- Add package to a repository
+- Add tests

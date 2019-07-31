@@ -126,24 +126,26 @@ const camelcase = Vue => {
 
 // CONCATENATED MODULE: ./src/filters/capitalize.js
 const capitalize = Vue => {
-  Vue.filter("capitalize", value => {
+  Vue.filter("capitalize", (value, options) => {
     if (!value) return;
-    return capitalize(value);
+    return capitalize(value, options);
   });
 
-  Vue.prototype.$capitalize = value => {
-    return capitalize(value);
+  Vue.prototype.$capitalize = (value, options) => {
+    return capitalize(value, options);
   };
 
-  function capitalize(value) {
+  function capitalize(value, options) {
     if (value && isNaN(value)) {
-      value = value.split(" ");
-
-      for (var i = 0; i < value.length; i++) {
-        value[i] = value[i][0].toUpperCase() + value[i].substr(1);
+      if (options == "first") {
+        value = value.split(" ");
+        for (var i = 0; i < value.length; i++) {
+          value[i] = value[i][0].toUpperCase() + value[i].substr(1);
+        }
+        return value.join(" ");
+      } else if (!options) {
+        return value.toUpperCase();
       }
-
-      return value.join(" ");
     }
     return value;
   }
@@ -168,34 +170,36 @@ const htmlEntities = Vue => {
   }
 };
 
+// CONCATENATED MODULE: ./src/filters/decapitalize.js
+const decapitalize = Vue => {
+  Vue.filter("decapitalize", value => {
+    if (!value) return;
+    return decapitalize(value);
+  });
+
+  Vue.prototype.$decapitalize = value => {
+    return decapitalize(value);
+  };
+
+  function decapitalize(value) {
+    if (value && isNaN(value)) {
+      return value.toLowerCase();
+    }
+    return value;
+  }
+};
+
 // CONCATENATED MODULE: ./src/index.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pcamelcase", function() { return pcamelcase; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pcapitalize", function() { return pcapitalize; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phtmlEntities", function() { return phtmlEntities; });
 
 
 
 
-const pcamelcase = {
-  install(Vue, options) {
-    camelcase(Vue, options);
-  }
-};
-const pcapitalize = {
-  install(Vue, options) {
-    capitalize(Vue, options);
-  }
-};
-const phtmlEntities = {
-  install(Vue, options) {
-    htmlEntities(Vue, options);
-  }
-};
 
 const vueFiltersCollection = {
   install(Vue, options) {
     camelcase(Vue, options);
     capitalize(Vue, options);
+    decapitalize(Vue, options);
     htmlEntities(Vue, options);
   }
 };
