@@ -189,7 +189,30 @@ const decapitalize = Vue => {
   }
 };
 
+// CONCATENATED MODULE: ./src/filters/replaceAll.js
+const replaceAll = Vue => {
+  Vue.filter("replaceAll", (value, replaceThis, withThis) => {
+    if (!value) return;
+    return replaceAll(value, replaceThis, withThis);
+  });
+
+  Vue.prototype.$replaceAll = (value, replaceThis, withThis) => {
+    return replaceAll(value, replaceThis, withThis);
+  };
+
+  function replaceAll(value, replaceThis, withThis) {
+    if (value && isNaN(value)) {
+      const regex = RegExp(replaceThis, "gi");
+      const newValue = value.replace(regex, withThis);
+      return newValue;
+    } else {
+      return value;
+    }
+  }
+};
+
 // CONCATENATED MODULE: ./src/index.js
+
 
 
 
@@ -201,6 +224,7 @@ const vueFiltersCollection = {
     capitalize(Vue, options);
     decapitalize(Vue, options);
     htmlEntities(Vue, options);
+    replaceAll(Vue, options);
   }
 };
 
