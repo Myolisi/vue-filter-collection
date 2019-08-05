@@ -63,6 +63,8 @@ export default {
 
 doTheBoogie(){
      console.log(this.$options.filters.capitalize(this.pCapitalize)); //JAMES MAY
+     //or
+     console.log(this.$capitalize("james"));
      // ......
 }
 
