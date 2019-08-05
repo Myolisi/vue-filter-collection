@@ -11,8 +11,7 @@ vue-filters-collection is a collection of filters that help transform/convert st
 
 - `htmlEntities` - substitutes &quot; htmlentity with a double quote.
 
-see vuejs example here: [vuejs-filters](https://dev.w3.org/html5/html-author/charref).
-see nuxtjs example here: [vuejs-filters](https://codesandbox.io/s/codesandbox-nuxt-nobes).
+see vuejs codesandbox: [vuejs-filters](https://dev.w3.org/html5/html-author/charref). </br> see nuxtjs codesandbox: [vuejs-filters](https://codesandbox.io/s/codesandbox-nuxt-nobes).
 
 ### To install
 
