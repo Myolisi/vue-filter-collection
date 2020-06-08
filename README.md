@@ -1,5 +1,7 @@
 # vue-filters-collection :boom:
 
+see **vuejs** codesandbox: [vuejs-filters](https://dev.w3.org/html5/html-author/charref). </br> see **nuxtjs** codesandbox: [vuejs-filters](https://codesandbox.io/s/codesandbox-nuxt-nobes).
+
 vue-filters-collection is a collection of filters that help transform/convert strings in a more convenient way. the following is a list of all the available filters (_For now_)
 
 - `camelcasToReadable` - Will converts a camelcase string to a readable string JamesMay will be James May
@@ -12,8 +14,6 @@ vue-filters-collection is a collection of filters that help transform/convert st
 - `htmlEntities` - substitutes &quot; htmlentity with a double quote.
 
 - `replaceAll` - finds and replace all occurrences for a single string.
-
-see vuejs codesandbox: [vuejs-filters](https://dev.w3.org/html5/html-author/charref). </br> see nuxtjs codesandbox: [vuejs-filters](https://codesandbox.io/s/codesandbox-nuxt-nobes).
 
 ### To install
 
