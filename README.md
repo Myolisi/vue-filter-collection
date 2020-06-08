@@ -1,6 +1,8 @@
 # vue-filters-collection :boom:
 
-see **vuejs** codesandbox: [vuejs-filters](https://dev.w3.org/html5/html-author/charref). </br> see **nuxtjs** codesandbox: [vuejs-filters](https://codesandbox.io/s/codesandbox-nuxt-nobes).
+### Example projects in nuxt and vuejs
+
+**vuejs** codesandbox: [vuejs-filters](https://dev.w3.org/html5/html-author/charref). </br> **nuxtjs** codesandbox: [vuejs-filters](https://codesandbox.io/s/codesandbox-nuxt-nobes).
 
 vue-filters-collection is a collection of filters that help transform/convert strings in a more convenient way. the following is a list of all the available filters (_For now_)
 
