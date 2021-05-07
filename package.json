@@ -1,69 +1,68 @@
 {
-  "name": "vue-filters-collection",
-  "version": "0.4.3",
-  "private": false,
-  "description": "A collection of handy vuejs filters.",
-  "author": "myolisi <myolisi@ngubentombi.co.za>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Myolisi/vue-filter-collection.git"
-  },
-  "main": "./dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "vue html entities",
-    "html entities",
-    "camelcase to string",
-    "vuejs",
-    "vue-filters",
-    "vuejs-filters",
-    "nuxtjs filters",
-    "string manipulation",
-    "vue capitalize"
-  ],
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "webpack",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.7.0",
-    "@vue/cli-plugin-eslint": "^3.7.0",
-    "@vue/cli-service": "^3.7.0",
-    "@vue/eslint-config-prettier": "^4.0.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21",
-    "webpack-cli": "^3.3.6"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/prettier"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+	"name": "vue-filters-collection",
+	"version": "0.4.4",
+	"private": false,
+	"description": "A collection of handy vuejs filters.",
+	"author": "myolisi <myolisi@ngubentombi.co.za>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Myolisi/vue-filter-collection.git"
+	},
+	"main": "./dist/index.js",
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"vue html entities",
+		"html entities",
+		"camelcase to string",
+		"vuejs",
+		"vue-filters",
+		"vuejs-filters",
+		"nuxtjs filters",
+		"string manipulation",
+		"vue capitalize"
+	],
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "webpack",
+		"lint": "vue-cli-service lint"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"core-js": "^2.6.5",
+		"vue": "^2.6.10",
+		"@vue/cli-plugin-babel": "^3.7.0",
+		"@vue/cli-plugin-eslint": "^3.7.0",
+		"@vue/cli-service": "^3.7.0",
+		"@vue/eslint-config-prettier": "^4.0.1",
+		"babel-eslint": "^10.0.1",
+		"eslint": "^5.16.0",
+		"eslint-plugin-vue": "^5.0.0",
+		"vue-template-compiler": "^2.5.21",
+		"webpack-cli": "^3.3.6"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"@vue/prettier"
+		],
+		"rules": {},
+		"parserOptions": {
+			"parser": "babel-eslint"
+		}
+	},
+	"postcss": {
+		"plugins": {
+			"autoprefixer": {}
+		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	]
 }
