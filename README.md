@@ -1,8 +1,6 @@
 # vue-filters-collection :boom:
 
-### Example projects in nuxt and vuejs
-
-**vuejs** codesandbox: [vuejs-filters](https://dev.w3.org/html5/html-author/charref). </br> **nuxtjs** codesandbox: [vuejs-filters](https://codesandbox.io/s/codesandbox-nuxt-nobes).
+## codesandbox example: [vuejs-filters](https://codesandbox.io/s/codesandbox-nuxt-forked-hbbj2?file=/pages/index.vue:0-1672).
 
 vue-filters-collection is a collection of filters that help transform/convert strings in a more convenient way. the following is a list of all the available filters (_For now_)
 
@@ -39,24 +37,31 @@ Vue.use(vueFiltersCollection);
 ```javascript
 <template>
   <div id="app">
-    <div>{{pCapitalize | capitalize}}</div> //JAMES MAY
-    <div>{{pCapitalize | capitalize('first')}}</div> //Jame May
+    <div>{{ pCapitalize | capitalize }}</div>
+    //JAMES MAY
+    <div>{{ pCapitalize | capitalize("first") }}</div>
+    //Jame May
 
-    <div>{{pDecapitalize | decapitalize}}</div> //james may
-    <div>{{pEntities | htmlEntities}}</div> //Hello "james" may
-	<div>{{pCamelcase | camelcase}}</div> //Asta Lavista Baby
+    <div>{{ pDecapitalize | decapitalize }}</div>
+    //james may
+    <div>{{ pEntities | htmlEntities }}</div>
+    //Hello "james" may
+    <div>{{ pCamelcase | camelcase }}</div>
+    //Asta Lavista Baby
 
-	<div>{{pReplaceAll}} :{{pReplaceAll | replaceAll('this', 'that')}} - replace all</div> //that is not a thattle, that is a cactus
+    <div>
+      {{ pReplaceAll }} :{{ pReplaceAll | replaceAll("this", "that") }} -
+      replace all
+    </div>
+    //that is not a thattle, that is a cactus
 
-    <div v-for="(key) in entities" :key="key">
+    <div v-for="key in entities" :key="key">
       <h3>
-        {{key}} --------------
-        <span class="ent">{{key | htmlEntities}}</span>
+        {{ key }} --------------
+        <span class="ent">{{ key | htmlEntities }}</span>
       </h3>
     </div>
-    {{pEntities}} :{{pEntities | htmlEntities}} - htmlEntities
-  </div>
-
+    {{ pEntities }} :{{ pEntities | htmlEntities }} - htmlEntities
   </div>
 </template>
 
@@ -68,11 +73,11 @@ export default {
       pCapitalize: "james may",
       pDecapitalize: "JAMES MAY",
       pEntities: "Hello &quot;james&quot; may",
-	  pCamelcase: "astaLavistaBaby"
-	  pReplaceAll: "This is not a thistle, THIS is a cactus",
+      pCamelcase: "astaLavistaBaby",
+      pReplaceAll: "This is not a thistle, THIS is a cactus",
 
-	 //new html entities
-	  entities: {
+      //new html entities
+      entities: {
         quo: "&quot; or &#34;",
         excla: "&excl; or &#33;",
         hash: "&num; or &#35;",
@@ -88,10 +93,10 @@ export default {
         copy: "&copy; or &#169;",
         pound: "&pound; or &#163;",
         euro: "&euro; or &#8364;",
-        micro: "&micro; or &#181;"
-      }
+        micro: "&micro; or &#181;",
+      },
     };
-  }
+  },
 };
 </script>
 ```
